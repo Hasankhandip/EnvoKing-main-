@@ -1,0 +1,81 @@
+// header-section scss start
+.header-section {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+  background-color: transparent;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  transition: 0.4s;
+  &.active {
+    background-color: #fff;
+    border-bottom: none;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.07);
+    .logo-text {
+      color: #000;
+    }
+    .nav-link {
+      color: #000 !important;
+      &::before {
+        background-color: $main-color;
+      }
+    }
+    .btn-1-inner {
+      background: #091d3e;
+    }
+    .btn-1-text {
+      color: #fff;
+    }
+  }
+  .btn-1-inner {
+    padding: 13px 25px;
+  }
+}
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+.navbar-collapse {
+  display: flex !important;
+  justify-content: end;
+  align-items: center;
+}
+.navbar {
+  padding: 0;
+}
+.navbar-nav {
+  margin-right: 50px;
+}
+.logo-text {
+  font-family: $main-font;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+  font-style: italic;
+  margin-left: 8px;
+  transition: 0.4s;
+}
+.nav-link {
+  color: #fff !important;
+  font-weight: 500;
+  padding: 35px 20px !important;
+  position: relative;
+  transition: 0.4s;
+  &:hover {
+    &::before {
+      width: 100%;
+    }
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0;
+    background-color: #fff;
+    transition: 0.4s;
+  }
+}
+// header-section scss end

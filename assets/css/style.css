@@ -1,0 +1,593 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Roboto:wght@300;400;500;700;900&display=swap");
+@-webkit-keyframes banner-animation {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  25% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  50% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  75% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes banner-animation {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  25% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  50% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  75% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@-webkit-keyframes explode {
+  0% {
+    width: 0px;
+    height: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    background-color: #0092ff;
+  }
+  100% {
+    width: 400px;
+    height: 400px;
+    margin-left: -200px;
+    margin-top: -200px;
+    background-color: #0092ff;
+  }
+}
+
+@keyframes explode {
+  0% {
+    width: 0px;
+    height: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    background-color: #0092ff;
+  }
+  100% {
+    width: 400px;
+    height: 400px;
+    margin-left: -200px;
+    margin-top: -200px;
+    background-color: #0092ff;
+  }
+}
+
+@-webkit-keyframes desplode {
+  0% {
+    width: 400px;
+    height: 400px;
+    margin-left: -200px;
+    margin-top: -200px;
+    background-color: #0092ff;
+  }
+  100% {
+    width: 0px;
+    height: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    background-color: #0092ff;
+  }
+}
+
+@keyframes desplode {
+  0% {
+    width: 400px;
+    height: 400px;
+    margin-left: -200px;
+    margin-top: -200px;
+    background-color: #0092ff;
+  }
+  100% {
+    width: 0px;
+    height: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    background-color: #0092ff;
+  }
+}
+
+@-webkit-keyframes explode-2 {
+  0% {
+    width: 0px;
+    height: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    background-color: #fff;
+  }
+  100% {
+    width: 400px;
+    height: 400px;
+    margin-left: -200px;
+    margin-top: -200px;
+    background-color: #fff;
+  }
+}
+
+@keyframes explode-2 {
+  0% {
+    width: 0px;
+    height: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    background-color: #fff;
+  }
+  100% {
+    width: 400px;
+    height: 400px;
+    margin-left: -200px;
+    margin-top: -200px;
+    background-color: #fff;
+  }
+}
+
+@-webkit-keyframes desplode-2 {
+  0% {
+    width: 400px;
+    height: 400px;
+    margin-left: -200px;
+    margin-top: -200px;
+    background-color: #fff;
+  }
+  100% {
+    width: 0px;
+    height: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    background-color: #fff;
+  }
+}
+
+@keyframes desplode-2 {
+  0% {
+    width: 400px;
+    height: 400px;
+    margin-left: -200px;
+    margin-top: -200px;
+    background-color: #fff;
+  }
+  100% {
+    width: 0px;
+    height: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    background-color: #fff;
+  }
+}
+
+@-webkit-keyframes explode-3 {
+  0% {
+    width: 0px;
+    height: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    background-color: #091d3e;
+  }
+  100% {
+    width: 400px;
+    height: 400px;
+    margin-left: -200px;
+    margin-top: -200px;
+    background-color: #091d3e;
+  }
+}
+
+@keyframes explode-3 {
+  0% {
+    width: 0px;
+    height: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    background-color: #091d3e;
+  }
+  100% {
+    width: 400px;
+    height: 400px;
+    margin-left: -200px;
+    margin-top: -200px;
+    background-color: #091d3e;
+  }
+}
+
+@-webkit-keyframes desplode-3 {
+  0% {
+    width: 400px;
+    height: 400px;
+    margin-left: -200px;
+    margin-top: -200px;
+    background-color: #091d3e;
+  }
+  100% {
+    width: 0px;
+    height: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    background-color: #091d3e;
+  }
+}
+
+@keyframes desplode-3 {
+  0% {
+    width: 400px;
+    height: 400px;
+    margin-left: -200px;
+    margin-top: -200px;
+    background-color: #091d3e;
+  }
+  100% {
+    width: 0px;
+    height: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    background-color: #091d3e;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0;
+}
+
+p {
+  margin-bottom: 0;
+  color: #575757;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: #000;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+ul {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+span {
+  margin-bottom: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  color: #fff;
+}
+
+input:focus {
+  outline: none;
+}
+
+.form-select:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none;
+  outline: none;
+}
+
+.container-xl,
+.container-lg,
+.container-md,
+.container-sm,
+.container {
+  max-width: 1200px;
+}
+
+.btn-1 {
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  border-radius: 3px;
+}
+
+.btn-1:hover .btn-1-text {
+  color: #fff !important;
+}
+
+.btn-1-circle {
+  border-radius: 1000px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0px;
+  height: 0px;
+  margin-left: 0px;
+  margin-top: 0px;
+  pointer-events: none;
+}
+
+.btn-1-inner {
+  display: inline-block;
+  background: #fff;
+  color: #000;
+  font-size: 16px;
+  font-weight: normal;
+  text-align: center;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  text-decoration: none;
+  padding: 15px 30px;
+}
+
+.btn-1-text {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 111111;
+  font-weight: 500;
+  color: #000;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.btn-1-text i {
+  font-size: 25px;
+  margin-left: 5px;
+}
+
+.explode-circle {
+  -webkit-animation: explode 1s forwards;
+          animation: explode 1s forwards;
+}
+
+.desplode-circle {
+  -webkit-animation: desplode 0.5s forwards;
+          animation: desplode 0.5s forwards;
+}
+
+.btn-2:hover .btn-1-text {
+  color: #000 !important;
+}
+
+.btn-2 .btn-1-text {
+  color: #fff !important;
+}
+
+.btn-2 .btn-1-inner {
+  background: #0092ff;
+}
+
+.btn-2 .explode-circle {
+  -webkit-animation: explode-2 1s forwards;
+          animation: explode-2 1s forwards;
+}
+
+.btn-2 .desplode-circle {
+  -webkit-animation: desplode-2 0.5s forwards;
+          animation: desplode-2 0.5s forwards;
+}
+
+.btn-3:hover .btn-1-text {
+  color: #fff !important;
+}
+
+.btn-3 .btn-1-text {
+  color: #000 !important;
+}
+
+.btn-3 .btn-1-inner {
+  background: #fff;
+}
+
+.btn-3 .explode-circle {
+  -webkit-animation: explode-3 1s forwards;
+          animation: explode-3 1s forwards;
+}
+
+.btn-3 .desplode-circle {
+  -webkit-animation: desplode-3 0.5s forwards;
+          animation: desplode-3 0.5s forwards;
+}
+
+.header-section {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+  background-color: transparent;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.header-section.active {
+  background-color: #fff;
+  border-bottom: none;
+  -webkit-box-shadow: 0 3px 4px rgba(0, 0, 0, 0.07);
+          box-shadow: 0 3px 4px rgba(0, 0, 0, 0.07);
+}
+
+.header-section.active .logo-text {
+  color: #000;
+}
+
+.header-section.active .nav-link {
+  color: #000 !important;
+}
+
+.header-section.active .nav-link::before {
+  background-color: #0092ff;
+}
+
+.header-section.active .btn-1-inner {
+  background: #091d3e;
+}
+
+.header-section.active .btn-1-text {
+  color: #fff;
+}
+
+.header-section .btn-1-inner {
+  padding: 13px 25px;
+}
+
+.navbar-brand {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar-collapse {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar {
+  padding: 0;
+}
+
+.navbar-nav {
+  margin-right: 50px;
+}
+
+.logo-text {
+  font-family: "IBM Plex Sans", sans-serif;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+  font-style: italic;
+  margin-left: 8px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.nav-link {
+  color: #fff !important;
+  font-weight: 500;
+  padding: 35px 20px !important;
+  position: relative;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.nav-link:hover::before {
+  width: 100%;
+}
+
+.nav-link::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background-color: #fff;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.banner-section {
+  padding: 280px 0 150px 0;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.banner-section::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/banner-1.jpg);
+  -webkit-animation: banner-animation 40s linear 3s infinite;
+          animation: banner-animation 40s linear 3s infinite;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -2;
+}
+
+.banner-section::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.45);
+  z-index: -1;
+}
+
+.banner-section .btn-1-inner {
+  padding: 15px 20px 15px 30px;
+}
+
+.banner-title-top {
+  color: #fff;
+  font-weight: 500;
+  font-size: 18px;
+  margin-bottom: 50px;
+}
+
+.banner-title {
+  color: #fff;
+  font-weight: 700;
+  font-size: 65px;
+  font-family: "IBM Plex Sans", sans-serif;
+  margin-bottom: 35px;
+}
+/*# sourceMappingURL=style.css.map */
