@@ -9,3 +9,7 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+@mixin section-padding {
+  padding-top: 115px;
+  padding-bottom: 115px;
+}

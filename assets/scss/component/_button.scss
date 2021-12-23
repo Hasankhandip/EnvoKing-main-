@@ -39,14 +39,14 @@
   z-index: 111111;
   font-weight: 500;
   color: #000;
-  transition: 0.4s;
+  transition: 0.5s;
   i {
     font-size: 25px;
     margin-left: 5px;
   }
 }
 .explode-circle {
-  animation: explode 1s forwards;
+  animation: explode 0.6s forwards;
 }
 .desplode-circle {
   animation: desplode 0.5s forwards;
@@ -67,7 +67,7 @@
     background: #0092ff;
   }
   .explode-circle {
-    animation: explode-2 1s forwards;
+    animation: explode-2 0.6s forwards;
   }
   .desplode-circle {
     animation: desplode-2 0.5s forwards;
@@ -89,7 +89,7 @@
     background: #fff;
   }
   .explode-circle {
-    animation: explode-3 1s forwards;
+    animation: explode-3 0.6s forwards;
   }
   .desplode-circle {
     animation: desplode-3 0.5s forwards;

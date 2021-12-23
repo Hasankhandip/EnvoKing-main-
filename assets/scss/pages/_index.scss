@@ -23,7 +23,7 @@
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.45);
+    background-color: rgba(0, 0, 0, 0.35);
     z-index: -1;
   }
   .btn-1-inner {
@@ -44,3 +44,296 @@
   margin-bottom: 35px;
 }
 //  banner-section scsss end
+
+// about-section scss start
+.about-section {
+  @include section-padding;
+}
+.about-img-area {
+  position: relative;
+}
+.about-img {
+  border-radius: 5px;
+}
+.about-img-1 {
+  width: 330px;
+}
+.about-img-2 {
+  position: absolute;
+  right: 30px;
+  top: -30px;
+  width: 310px;
+  height: 220px;
+  object-fit: cover;
+  object-position: center;
+}
+.about-img-3 {
+  position: absolute;
+  right: 30px;
+  bottom: -30px;
+  width: 310px;
+  height: 220px;
+  object-fit: cover;
+  object-position: center;
+}
+.about-title-top {
+  font-weight: 500;
+  color: $main-color;
+  font-size: 22px;
+  margin-bottom: 25px;
+}
+.about-title {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 25px;
+  font-family: $lato;
+}
+.about-item-list {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  color: #575757;
+  i {
+    width: 22px;
+    height: 22px;
+    background-color: $color-2;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 12px;
+    margin-right: 10px;
+  }
+}
+// about-section scss end
+
+// service-section scss start
+.service-section {
+  @include section-padding;
+  background-color: $color-2;
+}
+.section-title-area {
+  margin-bottom: 80px;
+}
+.section-title {
+  font-family: $main-font;
+  font-size: 40px;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.section-details {
+  color: #fff;
+}
+.service-item {
+  position: relative;
+  padding: 40px;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  overflow: hidden;
+  z-index: 1;
+  margin-bottom: 30px;
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 0;
+    background-color: #fff;
+    transition: 0.4s;
+    z-index: -1;
+  }
+  &:hover {
+    &::before {
+      width: 100%;
+    }
+    .service-title {
+      color: #000;
+    }
+    .service-btn-text {
+      opacity: 1;
+      visibility: visible;
+      left: 0;
+    }
+    .service-btn {
+      i {
+        background-color: $main-color;
+        border-color: $main-color;
+      }
+    }
+    .service-icon-hover {
+      opacity: 1;
+    }
+  }
+}
+.service-icon {
+  width: 60px;
+}
+.service-icon-unhover {
+  transform: translateX(0);
+  transition: 0.4s;
+}
+.service-icon-hover {
+  position: relative;
+  left: -63px;
+  opacity: 0;
+  transition: 0.4s;
+}
+.service-title {
+  color: #fff;
+  margin: 40px 0 20px 0;
+  transition: 0.4s;
+}
+.service-details {
+  color: #848e9f;
+  margin-bottom: 20px;
+}
+.service-btn {
+  display: flex;
+  align-items: center;
+  i {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    justify-content: center;
+    border: 2px solid #848e9f;
+    margin-right: 8px;
+    transition: 0.4s;
+  }
+}
+.service-btn-text {
+  font-weight: 500;
+  color: $main-color;
+  position: relative;
+  left: -8px;
+  z-index: -1;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+}
+// service-section scss end
+
+// pricing-section scss start
+.pricing-section {
+  @include section-padding;
+  .section-title {
+    color: #000;
+  }
+  .section-details {
+    color: #000;
+  }
+}
+.pricing-plan {
+  border-radius: 5px;
+  padding: 50px 40px;
+  box-shadow: 0 5px 70px 0 rgba(9, 29, 62, 0.06);
+  transition: 0.4s;
+  &:hover {
+    box-shadow: 0 5px 70px 0 rgba(9, 29, 62, 0.1);
+    .line {
+      &::before {
+        width: 100%;
+      }
+    }
+    .pricing-title {
+      color: $main-color;
+    }
+  }
+  .btn-1 {
+    .btn-1-inner {
+      background: $color-2;
+      padding: 15px 50px;
+    }
+    .btn-1-text {
+      color: #fff !important;
+      justify-content: center;
+    }
+  }
+}
+.pricing-title {
+  color: #000;
+  font-weight: 700;
+  margin-bottom: 35px;
+  transition: 0.4s;
+}
+.pricing-custom {
+  color: $main-color;
+  text-decoration: underline;
+  margin-left: 5px;
+  &:hover {
+    color: $main-color;
+  }
+}
+.pricing-amount {
+  font-family: $teko;
+  font-size: 90px;
+  font-weight: 500;
+  line-height: 1;
+  color: $color-2;
+  padding-left: 15px;
+  position: relative;
+  margin-bottom: 20px;
+  &::before {
+    content: "$";
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 22px;
+  }
+  span {
+    font-size: 16px;
+    font-family: $lato;
+    font-weight: 700;
+    margin-left: 10px;
+  }
+}
+.pricing-terms {
+  font-family: $roboto;
+  font-weight: 700;
+  color: #9b9b9b;
+}
+.pricing-item {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.pricing-item-list {
+  font-size: 18px;
+  font-family: $roboto;
+  font-weight: 500;
+  margin-bottom: 10px;
+  i {
+    font-size: 22px;
+    margin-right: 10px;
+    color: $main-color;
+  }
+  &.off {
+    color: #b1b1b1;
+    i {
+      color: #b1b1b1;
+    }
+  }
+}
+.line {
+  position: relative;
+  left: -40px;
+  width: 110%;
+  height: 2px;
+  background-color: #e6e8eb;
+  margin: 40px 0;
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: $main-color;
+    transition: 0.4s;
+  }
+}
+// pricing-section scss end
