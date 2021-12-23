@@ -31,3 +31,6 @@ $( ".btn-1-inner" ).mouseleave(function(e) {
 
 });
 // button js end
+ // wow.js start
+ new WOW().init();
+ // wow.js end

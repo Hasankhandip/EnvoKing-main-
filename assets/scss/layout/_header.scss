@@ -12,6 +12,11 @@
     background-color: #fff;
     border-bottom: none;
     box-shadow: 0 3px 4px rgba(0, 0, 0, 0.07);
+    animation-name: fadeInDown;
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+    animation-delay: 0.2s;
+    transition: 0.4s;
     .logo-text {
       color: #000;
     }
