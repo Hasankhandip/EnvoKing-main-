@@ -491,6 +491,7 @@
   position: relative;
   padding: 50px;
   background-image: url(../images/contact-bg.jpg);
+  @include bg-image;
   z-index: 1;
   &::before {
     content: "";

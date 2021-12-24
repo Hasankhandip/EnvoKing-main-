@@ -1204,6 +1204,9 @@ input:focus {
   position: relative;
   padding: 50px;
   background-image: url(../images/contact-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   z-index: 1;
 }
 
