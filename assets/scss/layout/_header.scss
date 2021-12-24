@@ -8,6 +8,22 @@
   background-color: transparent;
   border-bottom: 1px solid rgba(255, 255, 255, 0.15);
   transition: 0.4s;
+  .btn-1 {
+    &:nth-child(3) {
+      .btn-1-inner {
+        background: $main-color;
+      }
+      .explode-circle {
+        animation: explode-3 0.6s forwards;
+      }
+      .desplode-circle {
+        animation: desplode-3 0.5s forwards;
+      }
+      .btn-1-text {
+        color: #fff;
+      }
+    }
+  }
   &.active {
     background-color: #fff;
     border-bottom: none;
@@ -38,6 +54,20 @@
       }
       .desplode-circle {
         animation: desplode-3 0.5s forwards;
+      }
+      &:nth-child(3) {
+        .btn-1-inner {
+          background: $color-2;
+        }
+        .btn-1-text {
+          color: #fff;
+        }
+        .explode-circle {
+          animation: explode 0.6s forwards;
+        }
+        .desplode-circle {
+          animation: desplode 0.5s forwards;
+        }
       }
     }
   }
