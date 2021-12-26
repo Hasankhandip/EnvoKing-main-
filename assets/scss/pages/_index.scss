@@ -87,6 +87,7 @@
   font-weight: 600;
   margin-bottom: 20px;
   font-family: $lato;
+  line-height: 1.3;
 }
 .about-item-list {
   display: flex;
@@ -397,10 +398,9 @@
   margin-bottom: 30px;
   border-radius: 5px;
   overflow: hidden;
-
   &:hover {
     &::before {
-      background-color: $main-color;
+      background-color: $color-2;
       opacity: 0.8;
     }
     .case-text {
@@ -439,6 +439,7 @@
   transform: translateX(-50%);
   padding: 25px;
   transition: 0.3s;
+
   i {
     width: 45px;
     height: 45px;
@@ -451,6 +452,10 @@
     border: 2px solid #fff;
     margin-right: 8px;
     transition: 0.3s;
+    &:hover {
+      transform: scale(1.1);
+      border: 2.8px solid #fff;
+    }
   }
 }
 .col-lg-3 {
@@ -476,9 +481,6 @@
 // case-section scss end
 
 // contact-section scss start
-.contact-section {
-  @include section-padding;
-}
 .contact-item-area {
   box-shadow: 0 5px 70px 0 rgba(9, 29, 62, 0.1);
   border-radius: 5px;
@@ -487,11 +489,12 @@
     padding: 0;
   }
 }
-.why-choose-us {
-  position: relative;
+
+.contact-area {
   padding: 50px;
-  background-image: url(../images/contact-bg.jpg);
+  background-image: url(../images/contact-bg-2.jpg);
   @include bg-image;
+  position: relative;
   z-index: 1;
   &::before {
     content: "";
@@ -501,46 +504,28 @@
     width: 100%;
     height: 100%;
     background-color: $color-2;
-    opacity: 0.8;
+    opacity: 0.9;
     z-index: -1;
   }
-}
-.choose-item-img {
-  width: 50px;
-  margin-right: 20px;
-}
-.choose-item-area {
-  margin-top: 50px;
-}
-.choose-item-list {
-  display: flex;
-  justify-content: space-between;
-  align-items: start;
-  margin-bottom: 30px;
-}
-.choose-title {
-  color: #fff;
-  margin-bottom: 10px;
-  text-transform: capitalize;
-}
-.choose-details {
-  color: #fff;
-}
-.contact-area {
-  padding: 50px;
   .btn-1 {
     .btn-1-inner {
       background: $main-color;
       padding: 15px 50px;
     }
     .explode-circle {
-      animation: explode-3 0.6s forwards;
+      animation: explode-2 0.6s forwards;
     }
     .desplode-circle {
-      animation: desplode-3 0.5s forwards;
+      animation: desplode-2 0.5s forwards;
     }
     .btn-1-text {
       color: #fff;
+      transition: 0.4s;
+    }
+    &:hover {
+      .btn-1-text {
+        color: #000 !important;
+      }
     }
   }
 }
@@ -554,20 +539,20 @@
 .contact-input {
   width: 49%;
   padding: 15px;
-  border: 2px solid #e6e8eb;
-  color: #707176 !important;
+  border: 1px solid #e6e8eb;
+  color: #fff !important;
+  background-color: transparent;
   font-size: 16px;
   font-family: $lato;
-  font-weight: 600;
   border-radius: 5px;
   margin-bottom: 25px;
   transition: 0.4s;
   &::placeholder {
-    color: #000 !important;
+    color: #fff !important;
   }
   &:focus {
-    outline: none;
-    border-color: $main-color !important;
+    outline: none !important;
+    border: 1px solid $main-color;
   }
 }
 .contact-textarea {
@@ -575,3 +560,200 @@
   resize: none;
 }
 // contact-section scss end
+
+// team-section scss start
+.team-area {
+  position: relative;
+  border-radius: 5px;
+  background-color: $color-2;
+  @include section-padding;
+  padding-left: 50px;
+  padding-right: 50px;
+  .col-lg-5 {
+    padding-right: 120px;
+  }
+  .about-title {
+    word-spacing: 6px;
+  }
+}
+.team-member-img {
+  width: 100%;
+  height: auto;
+}
+.team-member {
+  margin: 0 10px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.team-member-title {
+  font-size: 22px;
+  margin-bottom: 4px;
+}
+.team-member-details {
+  background-color: #fff;
+  padding: 15px;
+  text-align: center;
+}
+.team-member-social {
+  display: flex;
+  margin-top: 15px;
+}
+.team-member-social-item {
+  width: calc(100% / 5);
+  &:first-child {
+    .team-member-social-link {
+      border-left: 1px solid #000;
+      border-radius: 5px 0 0 5px;
+    }
+  }
+  &:last-child {
+    .team-member-social-link {
+      border-radius: 0 5px 5px 0;
+    }
+  }
+}
+.team-member-social-link {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 45px;
+  border: 1px solid #000;
+  border-left: none;
+  &:hover {
+    background-color: $color-2;
+    i {
+      color: #fff;
+      transform: scale(1.1);
+    }
+  }
+  i {
+    font-size: 20px;
+    transition: 0.4s;
+  }
+}
+.left-arrow-team,
+.right-arrow-team {
+  position: relative;
+  width: 45px;
+  height: 45px;
+  background-color: #fff;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  overflow: hidden;
+  &:hover {
+    &::before {
+      transform: scale(1);
+    }
+    i {
+      color: #fff;
+    }
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $main-color;
+    transform: scale(0);
+    transition: 0.4s;
+    z-index: -1;
+  }
+  i {
+    font-size: 25px;
+    transition: 0.4s;
+  }
+}
+.slider-btn-area {
+  margin-top: 100px;
+  display: flex;
+}
+.slider-btn-area-2 {
+  margin-top: 50px;
+  .left-arrow-team,
+  .right-arrow-team {
+    background-color: $main-color;
+    &:hover {
+      &::before {
+        background-color: $color-2;
+      }
+    }
+    i {
+      color: #fff;
+    }
+  }
+}
+.team-icon {
+  position: absolute;
+  left: 5%;
+  top: -60px;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  background-color: $main-color;
+  @include d-flex;
+}
+.team-icon-img {
+  width: 65px;
+}
+// team-section scss end
+
+// testimonial-section scss start
+.testimonial-section {
+  @include section-padding;
+}
+.testimonial-item {
+  position: relative;
+  padding-left: 35px;
+}
+.testimonial-item-img {
+  width: 320px;
+  height: 380px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.testimonial-text {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 460px;
+  background-color: #fff;
+  padding: 25px 30px 25px 60px;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 5px 70px 0 rgba(9, 29, 62, 0.07);
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 10px;
+    background-color: $main-color;
+  }
+}
+.testimonial-details {
+  margin-bottom: 30px;
+}
+.testimonail-user {
+  display: flex;
+  justify-content: space-between;
+}
+.testimonail-user-title {
+  font-weight: 400;
+}
+.testimonial-rating {
+  display: flex;
+  i {
+    font-size: 20px;
+    margin-right: 3px;
+    color: $main-color;
+  }
+}
+// testimonial-section scss end

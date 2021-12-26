@@ -13,3 +13,9 @@
   padding-top: 115px;
   padding-bottom: 115px;
 }
+
+@mixin d-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
