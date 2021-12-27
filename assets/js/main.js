@@ -40,8 +40,8 @@ $(document).ready(function(){
   slidesToScroll: 1
   });
   $('.testimonial-area').slick({
-    prevArrow: ".left-arrow-team",
-    nextArrow:  ".right-arrow-team",
+    prevArrow: ".left-arrow-testimonial",
+    nextArrow:  ".right-arrow-testimonial",
     slidesToShow: 1,
   slidesToScroll: 1
   });

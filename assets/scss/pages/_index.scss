@@ -115,7 +115,7 @@
   background-color: $color-2;
 }
 .section-title-area {
-  margin-bottom: 80px;
+  margin-bottom: 60px;
 }
 .section-title {
   font-family: $main-font;
@@ -633,7 +633,9 @@
   }
 }
 .left-arrow-team,
-.right-arrow-team {
+.right-arrow-team,
+.left-arrow-testimonial,
+.right-arrow-testimonial {
   position: relative;
   width: 45px;
   height: 45px;
@@ -675,8 +677,8 @@
 }
 .slider-btn-area-2 {
   margin-top: 50px;
-  .left-arrow-team,
-  .right-arrow-team {
+  .left-arrow-testimonial,
+  .right-arrow-testimonial {
     background-color: $main-color;
     &:hover {
       &::before {
@@ -757,3 +759,68 @@
   }
 }
 // testimonial-section scss end
+
+// blog-section scss start
+.blog-section {
+  @include section-padding;
+}
+.blog-item {
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 5px 70px 0 rgba(9, 29, 62, 0.06);
+  transition: 0.4s;
+  &:hover {
+    box-shadow: 0 5px 70px 0 rgba(9, 29, 62, 0.1);
+    .blog-img {
+      transform: scale(1.15);
+    }
+  }
+}
+.blog-text {
+  padding: 30px;
+  .btn-1 {
+    .btn-1-inner {
+      background-color: $main-color !important;
+    }
+    .btn-1-text {
+      color: #fff !important;
+    }
+    .explode-circle {
+      animation: explode-3 0.6s forwards;
+    }
+    .desplode-circle {
+      animation: desplode-3 0.5s forwards;
+    }
+  }
+}
+.blog-img {
+  transition: 1s;
+}
+.blog-title {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 15px;
+  transition: 0.4s;
+}
+.blog-details {
+  margin-bottom: 20px;
+}
+.blog-img-area {
+  position: relative;
+  overflow: hidden;
+}
+.blog-post-time {
+  position: absolute;
+  right: 15px;
+  bottom: 0;
+  background-color: #fff;
+  color: $main-color;
+  font-size: 17px;
+  padding: 15px 25px;
+  text-align: center;
+  line-height: 1.5;
+  font-family: $main-font;
+  font-weight: 600;
+  border-radius: 5px 5px 0 0;
+}
+// blog-section scss end
